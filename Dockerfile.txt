@@ -1,0 +1,7 @@
+
+FROM rasa/rasa:3.6.10
+
+COPY . /app
+WORKDIR /app
+
+CMD ["run", "--enable-api", "--cors", "*", "--debug"]
